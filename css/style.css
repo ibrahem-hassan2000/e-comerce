@@ -390,6 +390,9 @@ ul.navbar-nav.col-lg-5.col {
 
 
 /* start choose*/
+.choose {
+  margin-top: 140px;
+}
 .choose .container {
   display: flex;
   flex-direction: column;
@@ -461,29 +464,341 @@ margin-bottom: 130px;
 
 
 /*image*/
-.imageall{
-  margin: 70px auto;
+.imageall {
+  margin: 20px auto 97px;
 }
-.imageall .container {
-  position: relative;
-  margin: 70px auto;
 
+
+
+.image-info {
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+
+background-image: url(/image/apartment-clean-condominium-279719.svg); 
+background-size: cover;
+height: 244px;
+margin: auto;
+flex-wrap: wrap;
+padding: 0px 39px;
+position: relative;
 }
-img.image {
-  max-width: 100%;
+.image-info::after {
+  content: "";
   position: absolute;
+  height: 100%;
+  background-color: #00000042;
+  width: 100%;
+  top: 0;
+  left: 0;
   z-index: 1;
 }
-img.blackimage {
-  position: absolute;
-  max-width: 100%;
-  left: 0;
-  top: 0;
-  z-index: 2;
-}
-.image-info {
-  position: absolute;
-  left: 0;
-  top: 0;
+.imageall .about {
+  max-width: 504px;
   z-index: 3;
+}
+.imageall .inbut {
+  display: flex;
+  gap: 20px;
+ 
+  z-index: 3;
+}
+.imageall .image-info h2 {
+  font-size: 29px;
+  font-family: Poppins;
+  color: white;
+  margin: 0;
+}
+.image-info h2 {
+  font-size: 29px;
+  font-family: Poppins;
+  color: white;
+  font-weight: 400;
+}
+.imageall input[type="submit"] {
+  width: 120px;
+  height: 48px;
+  border: none;
+  background-color: #1A6EFF;
+  border-radius: 50px;
+  color: white;
+  font-family: Poppins;
+  font-size: 13px;
+  font-weight: 600;
+}
+.imageall input[type="email"] {
+  width: 315px;
+  height: 48px;
+  border: none;
+  padding: 0 35px;
+  border-radius: 50px;
+  font-family: Poppins;
+  font-size: 13px;
+} 
+@media (max-width: 515px) {
+  .image-info {
+    padding: 0px 10px; 
+}
+.imageall .about {
+  max-width: 100%;
+  z-index: 3;
+  text-align: center;
+}
+.imageall .image-info h2 {
+  font-size: 21px;
+ 
+}
+.imageall .inbut {
+ gap: 6px;
+  width: 100%;
+}
+.imageall input[type="email"] {
+
+  max-width: 60%;
+}
+.imageall input[type="submit"] {
+  
+  width: 34%;
+}
+  }
+
+
+  /*footer*/
+
+  @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+
+
+  .footer-distributed {
+    display: flex;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 55px 50px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 35%;
+}
+.footer-left h4 {
+  font-family: Poppins;
+  font-size: 13px;
+  font-weight: 500;
+  margin: 30px auto;
+  color: #808080;
+}
+.footer-left p {
+  display: inline-block;
+  font-family: system-ui;
+  font-size: 19px;
+}
+p.recolor {
+  color: #1A6EFF;
+  font-size: 19px;
+}
+/* The company logo */
+
+.footer-distributed h3 {
+  font-size: 20px;
+  margin: 0;
+}
+.footer-distributed h3 img {
+  padding-right: 10px;
+}
+
+
+
+/* Footer links */
+
+
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+  font-weight:400;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #222;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+  width: 30%;
+  margin: 0px auto;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+
+
+.footer-distributed .footer-center p span {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: Poppins;
+  color: black;
+}
+
+.footer-distributed .footer-center p a{
+	color:  lightseagreen;
+	text-decoration: none;;
+}
+
+
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+  display: flex;
+  margin-top: 13px;
+  flex-direction: column;
+}
+
+.footer-distributed .footer-icons a {
+  display: inline-block;
+  height: 30px;
+  cursor: pointer;
+  font-size: 13px;
+  font-family: Poppins;
+  /* margin-right: 3px; */
+  /* margin-bottom: 15px; */
+  font-weight: 400;
+  margin: 9px 0px;
+  color: black;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+  .centeritem {
+    
+     flex: 1; 
+     
+  }
+  p.footer-links {
+   
+    justify-content: center;
+   
+}
+}
+
+.footer-center .contct {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  color: black;
+  font-size: 13px;
+ font-family: Poppins;
+font-weight: 400;
+}
+ 
+
+p.footer-links {
+  display: flex;
+  gap: 36px;
+}
+
+.centeritem {
+  display: flex;
+  justify-content: end;
+  align-items: flex-start;
+  width: 50%;
+  /* flex: 1; */
+  /* flex-wrap: wrap; */
+}
+
+
+
+@media (max-width: 550px) {
+
+
+  .centeritem {
+     flex-wrap: wrap; 
+  }
+}
+  /*end footer*/
+
+  /*copy*/
+  .copy h4 {
+    font-family: Poppins;
+    font-size: 12px;
+    text-align: center;
+    color: #AEAEAE;
+    font-weight: 200;
+    padding: 35px 0px;
+    border-top: 1px #EBEBEB solid;
 }
