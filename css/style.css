@@ -676,3 +676,78 @@ li.r-title {
     padding: 35px 0px;
     border-top: 1px #EBEBEB solid;
 }
+
+
+
+
+
+.navbar {
+  background-color: #91919173;
+  color: white;
+  justify-content: space-between;
+  padding: 0;
+}
+.navbar .container{
+  position: relative;
+}
+.navbar-light .navbar-brand {
+  color: white;
+}
+a.navbar-brand {
+  display: flex;
+  justify-content: start; 
+  align-items: center;
+  gap: 24px;
+  padding: 0;
+  margin: 0;
+  
+}
+.navbar-toggler {
+  
+  background-color: #87878754;
+ 
+}
+
+
+
+div#navbarSupportedContent {
+ 
+  max-width: 62%;
+  justify-content: center;
+  gap: 37px;
+  align-items: center;
+}
+
+ul.navbar-nav.mr-auto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 23px;
+}
+
+
+
+@media (max-width: 992px) {
+  div#navbarSupportedContent {
+    background-color: #705f5f7a;
+    max-width: 100%;
+    padding: 20px 0px;
+    margin-top: 10px;
+    border-radius: 10px;
+  }
+  ul.navbar-nav.mr-auto {
+   margin-bottom: 25px;
+  }
+  }
+  a.nav-link {
+    font-size: 14px;
+    font-weight: 800;
+    font-family: Poppins;
+    color: white;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
+  color: rgb(255 255 255 / 90%);
+}
